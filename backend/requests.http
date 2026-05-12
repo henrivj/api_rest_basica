@@ -1,0 +1,20 @@
+### Listar todas
+GET http://localhost:3000/encomendas
+
+### Consultar por id
+GET http://localhost:3000/encomenda/1
+
+### Cadastrar
+POST http://localhost:3000/encomenda
+Content-Type: application/json
+
+{
+    "carga": "Eletrônicos",
+    "descricaoCarga": "Notebook Dell",
+    "pesoKg": 2.5,
+    "distanciaKm": 100,
+    "prioridade": "normal"
+}
+
+### Deletar por id
+DELETE http://localhost:3000/encomenda/1

@@ -9,6 +9,12 @@ document.getElementById('botaoConsultar').addEventListener('click', (event) => {
 	})
 		.then((res) => res.json())
 		.then((dados) => {
+			if (dados.message) {
+				// a API so manda o message quando da erro, entao se tem, tem que escrever e dar return
+				respostaConsultar.innerHTML = `<tr><td>${dados.message}</td></tr>`;
+				return;
+			}
+
 			respostaConsultar.innerHTML = `
             <tr>
                 <td>${dados.id}</td>
