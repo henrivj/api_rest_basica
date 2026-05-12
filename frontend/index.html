@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<script src="./js/listar.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Sistema de entrega de encomendas</title>
+	</head>
+	<body>
+		<nav>
+			<a href="./cadastrar.html">Cadastrar</a>
+			<a href="./consultar.html">Consultar</a>
+			<a href="./deletar.html">Deletar</a>
+		</nav>
+
+		<table>
+			<h1>Todas as encomendas</h1>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Carga</th>
+					<th>Descrição</th>
+					<th>Peso (KG)</th>
+					<th>Distancia (KM)</th>
+					<th>Prioridade</th>
+					<th>Custo</th>
+				</tr>
+			</thead>
+			<tbody id="respostaListar"></tbody>
+		</table>
+	</body>
+</html>

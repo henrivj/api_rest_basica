@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<script src="./js/cadastrar.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Cadastrar</title>
+	</head>
+	<body>
+		<nav>
+			<a href="./index.html">Voltar</a>
+		</nav>
+
+		<div>
+			<form>
+				<input type="text" placeholder="Carga" id="inputCarga" />
+				<input type="text" placeholder="Descricao da carga" id="inputDescricaoCarga" />
+				<input type="number" placeholder="Peso da carga" id="inputPeso" />
+				<input type="number" placeholder="Distancia da carga" id="inputDistancia" />
+
+				<!-- o select no js vai funcionar igual um input, mas so deixa o usuario escolher uma das options.
+                Value é equivalente a oq o usuario teria escrito -->
+				<select id="inputPrioridade">
+					<option value="">Prioridade</option>
+					<option value="normal">Normal</option>
+					<option value="rapida">Rapida</option>
+					<option value="imediata">Imediata</option>
+				</select>
+
+				<button id="botaoCadastrar">Cadastrar</button>
+			</form>
+			<p id="respostaCadastrar"></p>
+		</div>
+	</body>
+</html>

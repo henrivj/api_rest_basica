@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<script src="./js/consultar.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Consultar</title>
+	</head>
+	<body>
+		<nav>
+			<a href="./index.html">Voltar</a>
+		</nav>
+
+		<div>
+			<form>
+				<input type="number" placeholder="ID da carga" id="inputId" />
+
+				<button id="botaoConsultar">Consultar</button>
+			</form>
+			<table>
+				<!-- table = tabela -->
+				<thead>
+					<!-- thead = cabecario da tabela (Table header) -->
+					<tr>
+						<!-- tr = linha da tabela (Table row) -->
+						<th>ID</th>
+						<!-- th = item do cabecario da tabela (table head) -->
+						<th>Carga</th>
+						<th>Descrição</th>
+						<th>Peso (KG)</th>
+						<th>Distancia (KM)</th>
+						<th>Prioridade</th>
+						<th>Custo</th>
+					</tr>
+				</thead>
+				<tbody id="respostaConsultar">
+					<!-- essa parte dentro do tbody nao precisa mas é bom pra explicar a estrutura -->
+					<!-- tbody = corpo da tabela (Table body) -->
+					<!-- td = informacao da tabela (Table data), um td pra id, carga, descricao... mas isso vai no JS-->
+					<!-- 
+					<tr>
+						<td>
+						</td>
+					</tr>
+					-->
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
